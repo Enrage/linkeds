@@ -1,0 +1,168 @@
+$main_color: #3f4040;
+$second_color: #40c866;
+$green_color: #50e078;
+
+$regular: "OpenSansRegular";
+$light: "OpenSansLight";
+$italic: "OpenSansItalic";
+$bold: "OpenSansBold";
+$semibold: "OpenSansSemiBold";
+$extrabold: "OpenSansExtraBold";
+
+@mixin transition($what, $time, $opt) {
+  transition: $what $time $opt;
+	-webkit-transition: $what $time $opt;
+  -moz-transition: $what $time $opt;
+  -o-transition: $what $time $opt;
+}
+
+@mixin radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-khtml-border-radius: $radius;
+	behavior: url(PIE.htc);
+}
+
+@mixin boxshadow($x, $y, $blur, $long, $color) {
+	box-shadow: $x $y $blur $long $color;
+	-moz-box-shadow: $x $y $blur $long $color;
+	-webkit-box-shadow: $x $y $blur $long $color;
+	-khtml-box-shadow: $x $y $blur $long $color;
+}
+
+@font-face {
+	font-family: "OpenSansRegular";
+	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+	src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+	url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansLight";
+	src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+	src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+	url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansItalic";
+	src: url("../fonts/OpenSansItalic/OpenSansItalic.eot");
+	src: url("../fonts/OpenSansItalic/OpenSansItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansItalic/OpenSansItalic.woff") format("woff"),
+	url("../fonts/OpenSansItalic/OpenSansItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansBold";
+	src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+	src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+	url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansExtraBold";
+	src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+	src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+	url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansExtraBoldItalic";
+	src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot");
+	src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.woff") format("woff"),
+	url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansBoldItalic";
+	src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+	src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"),
+	url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansRegularItalic";
+	src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot");
+	src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.woff") format("woff"),
+	url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansSemiBold";
+	src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+	src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+	url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "OpenSansSemiBoldItalic";
+	src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot");
+	src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff") format("woff"),
+	url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+.button {
+	background: $green_color;
+	@include radius(5px);
+	color: $main_color;
+	display: block;
+	font: 16px $regular;
+	height: 30px;
+	margin: 50px auto 0;
+	padding-top: 7px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 300px;
+	&:hover {
+		background: #21c74f;
+		color: #fff;
+	}
+}
+
+.title_h2 {
+	color: $main_color;
+	font: 36px $light;
+	padding: 30px 0;
+	text-align: center;
+}
